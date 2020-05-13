@@ -1,0 +1,149 @@
+{ 
+   "name" :"Table_16",
+   "title": " Structure of trade to have access to the resources needed for a decent standard of living ",
+   "description" :"World Bank 2007, based on data from UNCTAD,aggregates calculated for HDRO by the World Bank."
+    "fields" :  [
+
+
+        { 
+
+            "name": "HDI_rank",
+            "title":"HDI rank",
+            "type":"integer",
+            "description":"HDI rank of the countries determined on the basis of GEM values"
+            "constraints":{
+			     "unique": true
+}
+            
+        },
+
+        { 
+
+            "name": "Human_Development_Level(HDL)",
+            "title":"Human Development Level(HDL)",
+            "type":"array",
+            "description":"Human Development Level of all the countries from those who have the highest human devolpment level to those who have  the lowest human development"
+            "constraints":{  "enum":[ 
+                
+                
+                "High","Medium","Low"
+
+
+            ]
+
+
+
+
+
+
+
+            }
+
+        },
+
+        { 
+
+            "name": "Countries",
+            "title":"Countries",
+            "type":"string",
+            "description":"Name  of the countries",
+
+            "constraints":{
+                "required":true
+}
+
+
+        },
+
+        { 
+
+            "name": "Imports_of_goods_and_services_(% of GDP)_1990",
+            "title":"Imports_of_goods_and_services",
+            "type":"integer",
+            
+        },
+
+        { 
+
+            "name": "Imports_of_goods_and_services_(% of GDP)_2005",
+            "title":"Imports_of_goods_and_services",
+            "type":"integer",
+            
+        },
+        { 
+
+            "name": "Exports_of_goods_and_services_(% of GDP)_1990",
+            "title":"Exports_of_goods_and_services",
+            "type":"integer",
+        },
+
+        { 
+
+            "name": "Exports_of_goods_and_services_(% of GDP)_2005",
+            "title":"Exports_of_goods_and_services",
+            "type":"integer",
+        },
+
+        { 
+
+            "name": "Primary_exportsa_ (% of merchandise exports)_1990",
+            "title":"Primary_exports",
+            "type":"Number",
+		},
+        
+		{ 
+
+            "name": "Primary_exportsa_ (% of merchandise exports)_2005",
+            "title":"Primary_exports",
+            "type":"integer",
+        },
+		
+		{ 
+
+            "name": "Manufactured exports_(% of merchandise exports)_1990",
+            "title":"Manufactured exports",
+            "type":"integer",
+        },
+		
+		{ 
+
+            "name": "Manufactured_exports_(% of merchandise exports)_2005
+            "title":"Manufactured exports",
+            "type":"integer",
+        },
+		
+		{ 
+
+            "name": "High_technology_exports_(% of manufactured exports)_1990",
+            "title":"High_technology_exports",
+            "type":"Number",
+        },
+ 
+        
+        {
+            "name": "High_technology_exports_(% of manufactured exports)_2005",
+            "title":"High_technology_exports",
+            "type":"Number",
+        },
+	
+        {
+            "name": "Terms_of_trade_(2000=100)b_2004-05c",
+            "title":"Terms_of_trade_ (2000=100)b_2004-05c",
+            "type":"Number",
+        }
+
+
+
+    ],
+
+    "missingValues":[" "]
+
+
+
+
+
+
+
+
+
+}
