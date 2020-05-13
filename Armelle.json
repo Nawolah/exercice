@@ -1,0 +1,250 @@
+
+{
+   "name" : "Armelle ",
+   "title": " Structure of trade to have access to the resources needed for a decent standard of living ",
+   "description" :"World Bank 2007, based on data from UNCTAD ; aggregates calculated for HDRO by the World Bank.",
+    "fields" :  [
+
+
+        { 
+
+            "name": "HDIRank",
+            "title":"HDI rank",
+            "type":"integer",
+            "description":"HDI rank of the countries determined on the basis of GEM values",
+            "constraints":{
+			
+			    "mininum":1,
+				
+				"maximum":177,
+				
+			     "unique":true
+                           
+						   
+						   }
+            
+        },
+
+        { 
+
+            "name": "HDL",
+            "title":"Human Development Level(HDL)",
+            "type":"array",
+            "description":"Human Development Level of all the countries from those who have the highest human devolpment level to those who have  the lowest human development and it is determined on the basis of GEM values",
+            "constraints":{  
+			
+			     "enum":[ 
+                
+                
+                "High","Medium","Low"
+
+
+                       ]
+
+
+
+
+
+
+
+                         }
+
+        },
+
+        { 
+
+            "name": "Countries",
+            "title":"Countries",
+            "type":"string",
+            "description":"Name  of the countries",
+            "constraints":{
+			
+			    "maxLength":4,
+		
+				 
+                "required":true
+
+
+                          }
+
+
+        },
+
+        { 
+
+            "name": "Imports1990",
+            "title":"Imports_of_goods_and_services_1990 ",
+            "type":"integer",
+            "description" : "imports of goods and services ; annee 1990",
+			"constraints":{
+			
+			
+                 "mininum":1
+				 
+				            }
+            
+        },
+
+        { 
+
+            "name": "Imports2005",
+            "title":"Imports_of_goods_and_services_2005",
+            "type":"integer",
+            "description" : "imports of goods and services ; annee 2005",
+			"constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        },
+		
+        { 
+
+            "name": "Exports1990",
+            "title":"Exports_of_goods_and_services",
+            "type":"integer",
+            "description" : "Exports  of goods and services ",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        },
+
+        { 
+
+            "name": "Exports2005",
+            "title":"Exports_of_goods_and_services",
+            "type":"integer",
+            "description" : "Exports of goods and services ; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        },
+
+        { 
+
+            "name": "Primary1990",
+            "title":"Primary_exports_1990",
+            "type":"integer",
+            "description" : "primary exports ; annee 1990",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+
+		},
+        
+		{ 
+
+            "name": "Primary2005",
+            "title":"Primary_exports_2005",
+            "type":"integer",
+            "description" : "primary exports ; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        },
+		
+		{ 
+
+            "name": "Manufactured1990",
+            "title":"Manufactured exports_1990",
+            "type":"integer",
+            "description" : "Manufactured exports ; annee 1990",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        },
+		
+		{ 
+
+            "name": "Manufactured2005",
+            "title":"Manufactured exports_2005",
+            "type":"integer",
+            "description" : "Manufactured exports ; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        },
+		
+		{ 
+
+            "name": "HighTech1990",
+            "title":"High_technology_exports_1990",
+            "type":"Number",
+            "description" : "High technology exports; annee 1990",
+            "constraints":{ 
+			
+			
+                 "minimun":0
+				 
+				            }
+            
+        },
+ 
+        
+        {
+            "name": "HighTech2005",
+            "title":"High_technology_exports_2005",
+            "type":"Number",
+            "description" : "High technology exports; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimun":0
+				 
+				            }
+            
+        },
+	
+        {
+            "name": "TermsTrade",
+            "title":"Terms_of_trade_ (2000=100)b_2004-05",
+            "description":" terms of trade  pour l'annee 2004 a 2005",
+            "type":"integer",
+            "constraints":{ 
+			
+			
+                 "minimun":1
+				 
+				            }
+            
+        }
+
+ ],
+ 
+ "missingValues": [".."]
+
+
+
+
+
+
+
+
+
+}
